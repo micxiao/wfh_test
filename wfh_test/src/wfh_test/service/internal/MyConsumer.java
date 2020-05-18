@@ -23,6 +23,8 @@ class MyConsumer {
 				ExecutorService executor = Executors.newSingleThreadExecutor();
 			    Future<?> f = executor.submit(() -> receiveMessage(topicName));
 			    futures.add(f);
+			} else {
+				System.out.println("Kafka Consumer Polling is already running.");
 			}
 		} else {
 			ExecutorService executor = Executors.newSingleThreadExecutor();

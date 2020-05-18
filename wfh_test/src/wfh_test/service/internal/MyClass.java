@@ -18,6 +18,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+// This class uses Kafka to send, receive and parse XML documents
 public class MyClass implements IMyClass, MessageListener {
 	private MyConsumer cons;
 	private MyProducer prod;
@@ -42,7 +43,7 @@ public class MyClass implements IMyClass, MessageListener {
 		this.outputFilePath = outputFilePath;
 	}
 	
-	public static String readInputFile(String filePath) 
+	public static String fileToString(String filePath) 
 	{
 	    String content = "";
 	    try {
