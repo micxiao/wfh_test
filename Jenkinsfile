@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
 				dir('wfh_test') {
-					sh 'mvn --version'
+					sh 'mvn clean install'
 				}
             }
         }
