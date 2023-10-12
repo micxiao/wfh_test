@@ -1,0 +1,11 @@
+fastapi 
+uvicorn
+multipart
+pillow
+scikit-learn
+
+
+
+
+
+
